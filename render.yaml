@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: spendsmart-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: PYTHON_AI_URL
+        sync: false
+
+  - type: web
+    name: spendsmart-ai-categorizer
+    runtime: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: python utils/ai_categorizer.py
+    envVars:
+      - key: PORT
+        value: 8000

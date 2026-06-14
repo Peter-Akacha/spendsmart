@@ -1,0 +1,5 @@
+# No external packages needed for the basic version
+# Add these if you want to upgrade to ML-based categorization later:
+# scikit-learn==1.3.0
+# pandas==2.0.3
+# numpy==1.24.3

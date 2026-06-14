@@ -1,0 +1,9 @@
+.layout { display: flex; height: 100vh; overflow: hidden; }
+.sidebar { width: 220px; background: #1a1a2e; color: white; padding: 24px 16px; display: flex; flex-direction: column; gap: 8px; flex-shrink: 0; }
+.sidebar-brand { font-size: 1.3rem; font-weight: 700; padding: 12px 0 20px; border-bottom: 1px solid #333; margin-bottom: 8px; }
+.sidebar-user { font-size: 0.85rem; color: #aaa; margin-bottom: 12px; }
+.nav-link { color: #ccc; text-decoration: none; padding: 10px 12px; border-radius: 8px; font-size: 0.95rem; transition: all 0.2s; }
+.nav-link:hover, .nav-link.active { background: #4CAF50; color: white; }
+.logout-btn { margin-top: auto; background: none; border: 1px solid #555; color: #aaa; padding: 10px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; }
+.logout-btn:hover { background: #e53e3e; color: white; border-color: #e53e3e; }
+.main-content { flex: 1; overflow-y: auto; background: #f8f9fa; padding: 32px; }
